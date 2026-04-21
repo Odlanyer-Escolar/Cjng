@@ -8,7 +8,7 @@
         x:DataType="vm:MainWindowViewModel"
 
         VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"
-        Icon="/Assets/avalonia-logo.ico"
+        Icon="/Assets/logoGCS.ico"
         Title="Cjng">
 
     <Design.DataContext>
@@ -46,6 +46,8 @@
                  
                  <TextBlock  HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="White">INICIAR SESIÓN</TextBlock>   
                  </Button>
+                 <!-- Agregé un TextBlock para mostrar la fecha actual, además es la primera vez que hago un comentario jajaja -->
+                 <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding FechaHoy}" Foreground="Gray"></TextBlock>
         </StackPanel>
          <Button CornerRadius="20"  Foreground="White" Background="SteelBlue" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="35" Margin="20">
             <TextBlock HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Foreground="White">📊 REPORTES</TextBlock>

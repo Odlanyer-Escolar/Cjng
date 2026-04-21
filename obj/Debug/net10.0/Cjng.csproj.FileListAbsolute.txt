@@ -88,3 +88,4 @@ C:\Programas\Checador\Cjng\obj\Debug\net10.0\refint\Cjng.dll
 C:\Programas\Checador\Cjng\obj\Debug\net10.0\Cjng.pdb
 C:\Programas\Checador\Cjng\obj\Debug\net10.0\Cjng.genruntimeconfig.cache
 C:\Programas\Checador\Cjng\obj\Debug\net10.0\ref\Cjng.dll
+C:\Programas\Checador\Cjng\obj\Debug\net10.0\Cjng.sourcelink.json
