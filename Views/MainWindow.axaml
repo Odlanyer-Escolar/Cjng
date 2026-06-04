@@ -1,24 +1,19 @@
-<Window xmlns="https://github.com/avaloniaui"
+<ContentPage xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:Cjng.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        Loaded="Window_Loaded"
         x:Class="Cjng.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-
+        
         VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"
         Icon="/Assets/logoGCS.ico"
-        Title="Cjng">
-
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
-<Grid  Background="White">
+       >
+<Grid  Background="#52FFFFFF">
      
-    <StackPanel Background="Azure" VerticalAlignment="Top">
+    <StackPanel Background="Azure" VerticalAlignment="Top" >
         <StackPanel Orientation="Horizontal">     
                 <Image Source="avares://Cjng/Assets/logoGCS.png" Width="100" Height="50" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
                 <TextBlock Foreground="Black" FontSize="12"  Margin="5" VerticalAlignment="Top" HorizontalAlignment="Left"> 
@@ -30,19 +25,19 @@
         </StackPanel>
             <Border BorderBrush="Gray" BorderThickness="1"></Border>
     </StackPanel>
-    <StackPanel Background="White" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <StackPanel Background="White" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
               
             <TextBlock Foreground="Black" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,30">CONTROL DE ACCESO</TextBlock>
              <StackPanel Orientation="Horizontal">
                 <TextBlock LetterSpacing="1" Margin="0,4,0,0" Foreground="Black" FontSize="20">👤 USUARIO:</TextBlock>
-                <TextBox BorderBrush="Black" Background="White" Margin="60,0,0,0" Width="200" Height="30" ></TextBox>    
+                <TextBox BorderBrush="Black" x:Name="txtUsuario" Background="White" Margin="60,0,0,0" Width="200" Height="30" ></TextBox>    
              </StackPanel>
              <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                 <TextBlock LetterSpacing="1" Margin="0,24,0,0" FontSize="20" Foreground="Black">🔒 CONTRASEÑA: 
                 </TextBlock>
-                <TextBox BorderBrush="Black" Background="White" Margin="10,20,0,0" Width="200" Height="30" ></TextBox>
+                <TextBox BorderBrush="Black" x:Name="txtContrasena" Background="White" Margin="10,20,0,0" Width="200" Height="30" ></TextBox>
              </StackPanel>
-                 <Button  CornerRadius="20" Background="LimeGreen" Foreground="White" Margin="0,20,0,0" Width="200" Height="35" HorizontalAlignment="Center">
+                 <Button x:Name="btnIniciarSesion" Click="btnIniciarSesion_Click"  CornerRadius="20" Background="LimeGreen" Foreground="White" Margin="0,20,0,0" Width="200" Height="35" HorizontalAlignment="Center">
                  
                  <TextBlock  HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="White">INICIAR SESIÓN</TextBlock>   
                  </Button>
@@ -53,4 +48,4 @@
             <TextBlock HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Foreground="White">📊 REPORTES</TextBlock>
         </Button>    
     </Grid>
-</Window>
+</ContentPage>
