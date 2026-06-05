@@ -6,8 +6,8 @@
         x:Class="Cjng.Menu"
        >
                         <StackPanel>
-                            <Button Content="Gestión de personal" x:Name="BotonGestion" Click="BotonGestion_Click"/>
-                            <Button Content="Administrador" x:Name="BotonAdministrador" Click="BotonAdministrador_Click"/>
+                            <Button Content="Administración" x:Name="BotonGestion" Click="BotonGestion_Click"/>
+                            <Button Content="Gestión de personal" x:Name="BotonAdministrador" Click="BotonAdministrador_Click"/>
                             <Button Content="Control de accesos" x:Name="BotonControl" Click="BotonControl_Click"/>
                             <Button Content="Reportes" x:Name="BotonReportes" Click="BotonReportes_Click"/>
                         </StackPanel>

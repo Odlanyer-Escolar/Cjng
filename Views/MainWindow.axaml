@@ -34,8 +34,8 @@
              </StackPanel>
              <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                 <TextBlock LetterSpacing="1" Margin="0,24,0,0" FontSize="20" Foreground="Black">🔒 CONTRASEÑA: 
-                </TextBlock>
-                <TextBox BorderBrush="Black" x:Name="txtContrasena" Background="White" Margin="10,20,0,0" Width="200" Height="30" ></TextBox>
+                </TextBlock >
+                <TextBox PasswordChar="*" BorderBrush="Black" x:Name="txtContrasena" Background="White" Margin="10,20,0,0" Width="200" Height="30" ></TextBox>
              </StackPanel>
                  <Button x:Name="btnIniciarSesion" Click="btnIniciarSesion_Click"  CornerRadius="20" Background="LimeGreen" Foreground="White" Margin="0,20,0,0" Width="200" Height="35" HorizontalAlignment="Center">
                  
