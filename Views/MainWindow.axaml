@@ -35,7 +35,7 @@
              <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                 <TextBlock LetterSpacing="1" Margin="0,24,0,0" FontSize="20" Foreground="Black">🔒 CONTRASEÑA: 
                 </TextBlock>
-                <TextBox BorderBrush="Black" x:Name="txtContrasena" Background="White" Margin="10,20,0,0" Width="200" Height="30" ></TextBox>
+                <TextBox BorderBrush="Black" x:Name="txtContrasena" Background="White" Margin="10,20,0,0" Width="200" Height="30" PasswordChar="*" ></TextBox>
              </StackPanel>
                  <Button x:Name="btnIniciarSesion" Click="btnIniciarSesion_Click"  CornerRadius="20" Background="LimeGreen" Foreground="White" Margin="0,20,0,0" Width="200" Height="35" HorizontalAlignment="Center">
                  
@@ -44,8 +44,5 @@
                  <!-- Agregé un TextBlock para mostrar la fecha actual, además es la primera vez que hago un comentario jajaja -->
                  <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding FechaHoy}" Foreground="Gray"></TextBlock>
         </StackPanel>
-         <Button CornerRadius="20"  Foreground="White" Background="SteelBlue" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="35" Margin="20">
-            <TextBlock HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Foreground="White">📊 REPORTES</TextBlock>
-        </Button>    
     </Grid>
 </ContentPage>

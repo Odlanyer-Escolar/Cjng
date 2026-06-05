@@ -1,12 +1,63 @@
 <ContentPage xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Cjng.Control_De_Acceso"
-        >
-                    <StackPanel>
-                        <Label Content="Control de acceso"/>
-                        
-                    </StackPanel>
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+	x:Class="Cjng.Control_De_Acceso"
+	Background="#F5F5F5">
+	<Grid RowDefinitions="Auto,*,Auto">
+		<!-- Header -->
+		<Border Grid.Row="0" Background="SteelBlue" Padding="20">
+			<StackPanel>
+				<TextBlock Text="CONTROL DE ACCESO Y ASISTENCIA" FontSize="28" FontWeight="Bold" Foreground="White"/>
+				<TextBlock Text="Sistema de registro de entradas y salidas" FontSize="14" Foreground="LightGray" Margin="0,5,0,0"/>
+			</StackPanel>
+		</Border>
+
+		<!-- Contenido Principal -->
+		<Grid Grid.Row="1" ColumnDefinitions="*,*" Margin="20">
+			<!-- Panel Izquierdo -->
+			<Border Grid.Column="0" Background="White" Padding="20" CornerRadius="8" Margin="0,0,10,0">
+				<StackPanel>
+					<TextBlock Text="REGISTRAR ASISTENCIA" FontSize="20" FontWeight="Bold" Foreground="SteelBlue" Margin="0,0,0,15"/>
+
+					<StackPanel Margin="0,10,0,10">
+						<TextBlock Text="Seleccionar Trabajador:" FontSize="14" FontWeight="Bold"/>
+						<ComboBox x:Name="cmbTrabajadores" Margin="0,5,0,0" Height="35"/>
+					</StackPanel>
+
+					<StackPanel Margin="0,10,0,10">
+						<TextBlock Text="Hora Actual:" FontSize="14" FontWeight="Bold"/>
+						<TextBlock x:Name="txtHoraActual" Text="00:00:00" FontSize="32" FontWeight="Bold" Foreground="Green" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+					</StackPanel>
+
+					<StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center" Margin="0,20,0,0">
+						<Button x:Name="btnEntrada" Click="btnEntrada_Click" Background="LimeGreen" Foreground="White" Padding="20,15" Width="120">
+							✓ ENTRADA
+						</Button>
+						<Button x:Name="btnSalida" Click="btnSalida_Click" Background="OrangeRed" Foreground="White" Padding="20,15" Width="120">
+							✗ SALIDA
+						</Button>
+					</StackPanel>
+				</StackPanel>
+			</Border>
+
+			<!-- Panel Derecho -->
+			<Border Grid.Column="1" Background="White" Padding="20" CornerRadius="8">
+				<StackPanel>
+					<TextBlock Text="ÚLTIMAS GESTIONES" FontSize="20" FontWeight="Bold" Foreground="SteelBlue" Margin="0,0,0,15"/>
+					<ListBox x:Name="lstHistorial" Height="350"/>
+				</StackPanel>
+			</Border>
+		</Grid>
+
+		<!-- Footer -->
+		<Border Grid.Row="2" Background="WhiteSmoke" Padding="20">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+				<Button x:Name="btnVolver" Click="btnVolver_Click" Background="Gray" Foreground="White" Padding="15,10">
+					← VOLVER
+				</Button>
+			</StackPanel>
+		</Border>
+	</Grid>
 </ContentPage>

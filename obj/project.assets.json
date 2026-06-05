@@ -3628,23 +3628,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Odlanyer\\.nuget\\packages\\": {},
+    "C:\\Users\\Titi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programas\\Checador\\Cjng\\Cjng.csproj",
+      "projectUniqueName": "C:\\Users\\Titi\\Desktop\\Cjng-Odlanyer (1)\\Cjng\\Cjng.csproj",
       "projectName": "Cjng",
-      "projectPath": "C:\\Programas\\Checador\\Cjng\\Cjng.csproj",
-      "packagesPath": "C:\\Users\\Odlanyer\\.nuget\\packages\\",
-      "outputPath": "C:\\Programas\\Checador\\Cjng\\obj\\",
+      "projectPath": "C:\\Users\\Titi\\Desktop\\Cjng-Odlanyer (1)\\Cjng\\Cjng.csproj",
+      "packagesPath": "C:\\Users\\Titi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Titi\\Desktop\\Cjng-Odlanyer (1)\\Cjng\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Odlanyer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Titi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3653,7 +3653,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

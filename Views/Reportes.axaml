@@ -1,11 +1,67 @@
 <ContentPage xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Cjng.Reportes"
-        >
-    <StackPanel>
-        <Label Content="Reportes"/>
-    </StackPanel>
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:Class="Cjng.Reportes"
+		Background="#F5F5F5">
+	<Grid RowDefinitions="Auto,*,Auto">
+		<!-- Header -->
+		<Border Grid.Row="0" Background="SteelBlue" Padding="20">
+			<StackPanel>
+				<TextBlock Text="REPORTES Y ESTADÍSTICAS" FontSize="28" FontWeight="Bold" Foreground="White"/>
+				<TextBlock Text="Visualiza análisis de asistencias, salarios y estadísticas generales" FontSize="12" Foreground="LightGray" Margin="0,5,0,0"/>
+			</StackPanel>
+		</Border>
+
+		<!-- Contenido Principal -->
+		<Grid Grid.Row="1" RowDefinitions="Auto,*" Margin="20">
+			<!-- Opciones de Reporte -->
+			<Border Grid.Row="0" Background="White" Padding="15" CornerRadius="8" Margin="0,0,0,15">
+				<StackPanel>
+					<TextBlock Text="SELECCIONAR TIPO DE REPORTE" FontSize="16" FontWeight="Bold" Foreground="SteelBlue" Margin="0,0,0,10"/>
+					<StackPanel Orientation="Horizontal" Spacing="10">
+						<Button x:Name="btnReporteAsistencia" Click="btnReporteAsistencia_Click" Background="CornflowerBlue" Foreground="White" Padding="15,15" Width="180">
+							📊 ASISTENCIAS
+						</Button>
+						<Button x:Name="btnReporteSalarios" Click="btnReporteSalarios_Click" Background="ForestGreen" Foreground="White" Padding="15,15" Width="180">
+							💰 SALARIOS
+						</Button>
+						<Button x:Name="btnReporteEmpleados" Click="btnReporteEmpleados_Click" Background="DarkViolet" Foreground="White" Padding="15,15" Width="180">
+							👥 PERSONAL
+						</Button>
+						<Button x:Name="btnReporteGeneral" Click="btnReporteGeneral_Click" Background="Orange" Foreground="White" Padding="15,15" Width="180">
+							📈 GENERAL
+						</Button>
+					</StackPanel>
+					<Button x:Name="btnGenerarReporte" Click="btnGenerarReporte_Click" Background="SteelBlue" Foreground="White" Padding="15,15" Width="180">
+						✅ GENERAR
+					</Button>
+				</StackPanel>
+			</Border>
+
+			<!-- Contenido del Reporte -->
+			<Border Grid.Row="1" Background="White" Padding="15" CornerRadius="8">
+				<StackPanel>
+					<TextBlock x:Name="lblReporteTitle" Text="Seleccione un tipo de reporte" FontSize="16" FontWeight="Bold" Foreground="SteelBlue" Margin="0,0,0,15"/>
+					<ListBox x:Name="lstReporteData" Height="300"/>
+				</StackPanel>
+			</Border>
+		</Grid>
+
+		<!-- Footer -->
+		<Border Grid.Row="2" Background="WhiteSmoke" Padding="20">
+			<StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+				<Button x:Name="btnDescargarPDF" Click="btnDescargarPDF_Click" Background="Crimson" Foreground="White" Padding="15,10">
+					📄 PDF
+				</Button>
+				<Button x:Name="btnDescargarExcel" Click="btnDescargarExcel_Click" Background="ForestGreen" Foreground="White" Padding="15,10">
+					📊 EXCEL
+				</Button>
+				<Button x:Name="btnVolver" Click="btnVolver_Click" Background="Gray" Foreground="White" Padding="15,10">
+					← VOLVER
+				</Button>
+			</StackPanel>
+		</Border>
+	</Grid>
 </ContentPage>

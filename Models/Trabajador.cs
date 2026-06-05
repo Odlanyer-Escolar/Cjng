@@ -7,10 +7,13 @@ namespace Cjng.Models
     public class Trabajador
     {
         public int Id { get; set; }
+        public string Nombre { get; set; } = null!;
         public string Cargo { get; set; } = null!;
         public double Salario { get; set; }
         public DateTime FechaRegistro { get; set; }
         public DateTime Horas { get; set; }
         public bool Estado { get; set; } = true;
+
+        public override string ToString() => Nombre;
     }
 }

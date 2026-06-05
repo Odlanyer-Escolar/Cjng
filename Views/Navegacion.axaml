@@ -3,10 +3,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:Cjng.Views"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" 
         x:Class="Cjng.Navegacion"
-        Title="Navegacion">
- <NavigationPage>
+        Title="Sistema de Gestión - CJNG"
+        WindowStartupLocation="CenterScreen"
+        Width="1000"
+        Height="700"
+        Icon="/Assets/logoGCS.ico">
+    <NavigationPage>
         <views:MainWindow />
     </NavigationPage>
 </Window>

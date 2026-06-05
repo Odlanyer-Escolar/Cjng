@@ -23,32 +23,32 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cjng
-build_property.ProjectDir = C:\Programas\Checador\Cjng\
+build_property.ProjectDir = C:\Users\Titi\Desktop\Cjng-Odlanyer (1)\Cjng\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Programas/Checador/Cjng/App.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/Administrador.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/Administrador.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/Control_De_Acceso.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/Control_De_Acceso.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/Gestion_de_personal.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/Gestion_de_personal.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/MainWindow.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/Menu.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/Menu.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/Navegacion.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/Navegacion.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Programas/Checador/Cjng/Views/Reportes.axaml]
+[C:/Users/Titi/Desktop/Cjng-Odlanyer (1)/Cjng/Views/Reportes.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

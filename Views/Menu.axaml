@@ -4,11 +4,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Cjng.Menu"
-       >
-                        <StackPanel>
-                            <Button Content="Gestión de personal" x:Name="BotonGestion" Click="BotonGestion_Click"/>
-                            <Button Content="Administrador" x:Name="BotonAdministrador" Click="BotonAdministrador_Click"/>
-                            <Button Content="Control de accesos" x:Name="BotonControl" Click="BotonControl_Click"/>
-                            <Button Content="Reportes" x:Name="BotonReportes" Click="BotonReportes_Click"/>
+        Background="#F5F5F5">
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!-- Header -->
+        <Border Grid.Row="0" Background="RoyalBlue" Padding="20">
+            <StackPanel>
+                <TextBlock Text="MENÚ PRINCIPAL" FontSize="28" FontWeight="Bold" Foreground="White"/>
+                <TextBlock Text="Sistema de Gestión de Control de Acceso y Recursos Humanos" FontSize="12" Foreground="LightBlue" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Contenido Principal -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="20">
+            <TextBlock Text="Seleccione una opción:" FontSize="18" FontWeight="Bold" Foreground="RoyalBlue" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+            <StackPanel Spacing="15">
+                <StackPanel Orientation="Horizontal" Spacing="15">
+                    <!-- Gestión de Personal -->
+                    <Button x:Name="BotonGestion" Click="BotonGestion_Click" Background="CornflowerBlue" Foreground="White" Padding="30,30" Width="200" Height="120">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="👥" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                            <TextBlock Text="GESTIÓN DE PERSONAL" HorizontalAlignment="Center" FontSize="14" TextWrapping="Wrap"/>
                         </StackPanel>
+                    </Button>
+
+                    <!-- Administrador -->
+                    <Button x:Name="BotonAdministrador" Click="BotonAdministrador_Click" Background="DarkOrange" Foreground="White" Padding="30,30" Width="200" Height="120">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="⚙️" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                            <TextBlock Text="ADMINISTRACIÓN" HorizontalAlignment="Center" FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Spacing="15">
+                    <!-- Control de Acceso -->
+                    <Button x:Name="BotonControl" Click="BotonControl_Click" Background="ForestGreen" Foreground="White" Padding="30,30" Width="200" Height="120">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="🔐" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                            <TextBlock Text="CONTROL DE ACCESO" HorizontalAlignment="Center" FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Button>
+
+                    <!-- Reportes -->
+                    <Button x:Name="BotonReportes" Click="BotonReportes_Click" Background="Crimson" Foreground="White" Padding="30,30" Width="200" Height="120">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="📊" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                            <TextBlock Text="REPORTES" HorizontalAlignment="Center" FontSize="14" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="WhiteSmoke" Padding="20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+                <TextBlock Text="Sesión iniciada | v1.0" VerticalAlignment="Center" Foreground="Gray"/>
+                <Button x:Name="btnCerrarSesion" Click="btnCerrarSesion_Click" Background="Crimson" Foreground="White" Padding="15,10">
+                    🚪 CERRAR SESIÓN
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
 </ContentPage>

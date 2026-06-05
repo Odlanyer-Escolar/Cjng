@@ -25,7 +25,6 @@ public partial class Menu : ContentPage
         await Navigation.PushAsync(new Administrador());
         IsEnabled = true;
     }
-    
 
     private async void BotonControl_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
@@ -33,7 +32,6 @@ public partial class Menu : ContentPage
         await Navigation.PushAsync(new Control_De_Acceso());
         IsEnabled = true;
     }
-    
 
     private async void BotonReportes_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
@@ -41,4 +39,12 @@ public partial class Menu : ContentPage
         await Navigation.PushAsync(new Reportes());
         IsEnabled = true;
     }
+
+    private async void btnCerrarSesion_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        IsEnabled = false;
+        await Navigation.PopAsync();
+        IsEnabled = true;
+    }
 }
+
